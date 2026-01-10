@@ -2,14 +2,9 @@
 
 This project is a temperature monitoring system designed to track temperatures using an ESP32 microcontroller and display the data on a PC dashboard. It is suitable for monitoring GPU rigs or other equipment.
 
-## Features
-
-- Real-time temperature monitoring from multiple sensors
-- Configurable sensor count (1 to 3 sensors)
-- connection via WiFi (WebSocket)
-- Visual and auditory alarms for high temperatures
-- Historical data logging to CSV files
-- Clean and modern GUI using PyQt6
+<p align="center">
+<img src="/dashboard/app_icon.png" alt="icon" width="200"/>
+</p>
 
 ## Project Structure
 
@@ -24,6 +19,9 @@ This project is a temperature monitoring system designed to track temperatures u
 - Piezo Buzzer
 - 4.7k Ohm Resistor (pull-up for DS18B20)
 - Connecting wires and breadboard/PCB
+  
+<p align="center">
+<img src="hardware_build.png" alt="Hardware build" width="500"/>
 
 ## Software Requirements
 
@@ -58,7 +56,7 @@ This project is a temperature monitoring system designed to track temperatures u
 6. The OLED display will show the assigned IP address once connected to WiFi.
 
 ### 2. Dashboard (PC)
-    ![Dashboard Screenshot](dashboard_screenshot.png)
+![Dashboard Screenshot](/dashboard_screenshot.png)
     
 
 1. Navigate to the `dashboard` directory.
@@ -78,7 +76,6 @@ This project is a temperature monitoring system designed to track temperatures u
 5. Enter the IP address displayed on the ESP32 OLED screen into the dashboard and click Connect.
 
 ## Usage Guide
-    ![Hardware build](hardware_build.png)
 
 - **Connect**: Enter the ESP32 IP address and click the plug icon to connect.
 - **Sensors**: Use the spinner to select the number of sensors to display (1, 2, or 3).
